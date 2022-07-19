@@ -424,7 +424,6 @@ img{
     border: 0.5px solid #DDDDDD;
     border-top: none;
     box-sizing: border-box;
-    transition: 500ms;
 }
 .list-hotels-link:focus,
 .list-hotels:hover .list-hotels-link,
@@ -539,6 +538,13 @@ img{
 .list-contacts:hover .list-contacts-link .contacts-red{
     top: 0px;
     width: 87px;
+}
+.list-countries:hover .countries-block-overflow .cb-list,
+.list-avia:hover .avia-block-overflow .ab-list,
+.list-agents:hover .agents-block-overflow .agb-list,
+.list-hotels:hover .hotels-block-overflow .hb-list,
+.list-WE:hover .WE-block-overflow .wb-list{
+    transition: 500ms;
 }
 .hb-txt-div-1,
 .hb-txt-div-2,
@@ -657,7 +663,6 @@ img{
 .wb-txt-1:focus{
     color: #DD4053;
 }
-
 .list-hotels{
     left: 232px;
     width: 60px;
@@ -2536,9 +2541,9 @@ img{
 }
 .b-bottom-line{
     position: absolute;
-    width: 1036px;
+    width: 1170px;
     height: 1px;
-    left: 201px;
+    left: 115px;
     top: 191px;
     background: rgba(29, 29, 29, 0.2);
     border-radius: 2px;
@@ -2547,7 +2552,7 @@ img{
     position: absolute;
     width: 377px;
     height: 18px;
-    left: 201px;
+    left: 115px;
     top: 214px;
     font-family: 'Suisse Int`l Trial', sans-serif;
     font-style: normal;

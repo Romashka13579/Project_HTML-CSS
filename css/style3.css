@@ -1,47 +1,69 @@
 body{
     font-family: 'Roboto', sans-serif;
-    margin: 0em;
-    padding: 0em;
-    margin-right: calc(-1 * (100vw - 100%));
+    margin: 0px;
+    padding: 0px;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 .main{
     position: relative;
-    width: 1400px;
-    height: 1025px;
+    width: 100vw;
     margin: 0 auto;
     padding: 0 auto;
     overflow: hidden;
-    background: #FFFFFF;
+}
+@media screen and (min-width:2064px){
+    .main{
+        width: 2064px;
+    }
 }
 .top{
     position: relative;
-    width: 1400px;
+    width: 100vw;
     height: 100px;
-    margin: 0%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.top-blocks{
+    position: absolute;
+    width: 1237px;
+    height: 100px;
+    left: 81px;
+}
+@media screen and (min-width:1400px){
+    .top{
+        width: 1400px;
+    }
+}
+@media screen and (max-width:1400px) and (min-width:1297px){
+    .top-blocks{
+        left: calc((100vw - 1237px)/2);
+    }
 }
 .top-line{
     position: absolute;
     width: 100vw;
-    min-width: 1400px;
     height: 1px;
     top: 100px;
-    margin: 0%;
+    margin: 0 auto;
+    padding: 0 auto;
     background: #D0D0D0;
     z-index: 1;
 }
 .list-bottom-line{
     position: absolute;
     width: 100vw;
-    min-width: 1400px;
     height: 1px;
     top: 169px;
+    margin: 0 auto;
+    padding: 0 auto;
     background: #D0D0D0;
     z-index: 1;
 }
 .top-block1{
     position: absolute;
     top: 17px;
-    left: 81px;
     width: 131px;
     height: 72px;
 }
@@ -52,7 +74,7 @@ img{
 .dash{
     position: absolute;
     top: 31px;
-    left: 239px;
+    left: 158px;
     width: 1px;
     height: 40px;
     background: #E2E2E2;
@@ -61,7 +83,7 @@ img{
     position: absolute;
     width: 35px;
     height: 43px;
-    left: 260px;
+    left: 179px;
     top: 28px;
     align-items: center;
 }
@@ -98,7 +120,7 @@ img{
     position: absolute;
     width: 1px;
     height: 40px;
-    left: 323px;
+    left: 242px;
     top: 31px;
     background: #E2E2E2;
 }
@@ -106,7 +128,7 @@ img{
     position: absolute;
     width: 75px;
     height: 42px;
-    left: 346px;
+    left: 265px;
     top: 31px;
 }
 .cost-1{
@@ -130,7 +152,7 @@ img{
     position: absolute;
     width: 1px;
     height: 40px;
-    left: 446px;
+    left: 365px;
     top: 31px;
     background: #E2E2E2;
 }
@@ -138,7 +160,7 @@ img{
     position: absolute;
     width: 85px;
     height: 20px;
-    left: 472px;
+    left: 391px;
     top: 42px;
 }
 .facebook{
@@ -168,7 +190,7 @@ img{
     position: absolute;
     width: 1px;
     height: 40px;
-    left: 582px;
+    left: 501px;
     top: 31px;
     background: #E2E2E2;
 }
@@ -176,7 +198,7 @@ img{
     position: absolute;
     width: 128px;
     height: 47px;
-    left: 608px;
+    left: 527px;
     top: 29px;
 }
 .number-1,
@@ -196,7 +218,7 @@ img{
     position: absolute;
     width: 39px;
     height: 39px;
-    left: 743px;
+    left: 662px;
     top: 32px;
     background: url(../img/png-icons/smartphone\ 1.png);
     background-size: 39px 39px;
@@ -205,7 +227,7 @@ img{
     position: absolute;
     width: 1px;
     height: 40px;
-    left: 807px;
+    left: 726px;
     top: 31px;
     background: #E2E2E2;
 }
@@ -213,7 +235,7 @@ img{
     position: absolute;
     width: 475px;
     height: 55px;
-    left: 843px;
+    left: 762px;
     top: 23px;
 }
 .Maistra-block,
@@ -289,18 +311,85 @@ img{
     background: #4AD295;
     border-radius: 2px;
 }
-
+@media screen and (max-width:1297px) and (min-width:0px){
+    .top-blocks{
+        left: calc((100vw - 701px)/2);
+        width: 701px;
+        height: 177px;
+    }
+    .dash5{
+        display: none;
+    }
+    .top-line{
+        top: 177px;
+    }
+    .list-bottom-line{
+        top: 246px;
+    }
+    .top{
+        position: relative;
+        width: 100vw;
+        height: 177px;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    .top-block6{
+        position: relative;
+        top: 101px;
+        left: 0px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:760px){
+    .top-blocks{
+        left: calc((100vw - 655px)/2);
+        width: 655px;
+        height: 177px;
+    }
+    .smartphone-icon{
+        top: 110px;
+        left: 40px;
+    }
+    .dash5{
+        display: block;
+        top: 109px;
+        left: 104px;
+    }
+    .top-block6{
+        position: absolute;
+        top: 101px;
+        left: 140px;
+    }
+}
 .list{
-    position: absolute;
-    width: 1440px;
+    position: relative;
+    width: 100vw;
     height: 69px;
-    left: 0px;
-    top: 101px;    
+    top: 1px;  
+}
+.list-block{
+    position: absolute;
+    width: 1093px;
+    height: 69px;
+    left: 153px;
+}
+@media screen and (max-width:1400px) and (min-width:1153px){
+    .list-block{
+        position: absolute;
+        width: 1093px;
+        height: 69px;
+        left: calc((100vw - 1093px)/2);
+    }
+}
+@media screen and (min-width:1400px){
+    .list{
+        width: 1400px;
+        margin: 0 auto;
+    }
 }
 .search-icon{
     position: absolute;
-    top: 28px;
-    left: 174px;
+    top: 27px;
     width: 19px;
     height: 19px;
     background: no-repeat url(../img/png-icons/search.png);
@@ -425,7 +514,6 @@ img{
     border: 0.5px solid #DDDDDD;
     border-top: none;
     box-sizing: border-box;
-    transition: 500ms;
 }
 .list-hotels-link:focus,
 .list-hotels:hover .list-hotels-link,
@@ -540,6 +628,13 @@ img{
 .list-contacts:hover .list-contacts-link .contacts-red{
     top: 0px;
     width: 87px;
+}
+.list-countries:hover .countries-block-overflow .cb-list,
+.list-avia:hover .avia-block-overflow .ab-list,
+.list-agents:hover .agents-block-overflow .agb-list,
+.list-hotels:hover .hotels-block-overflow .hb-list,
+.list-WE:hover .WE-block-overflow .wb-list{
+    transition: 500ms;
 }
 .hb-txt-div-1,
 .hb-txt-div-2,
@@ -660,7 +755,7 @@ img{
 }
 
 .list-hotels{
-    left: 232px;
+    left: 79px;
     width: 60px;
 }
 .list-hotels-link{
@@ -680,15 +775,18 @@ img{
     top: -386.5px;
 }
 .list-countries{
-    left: 348px;
+    left: 195px;
+    width: 69px;
+}
+.list-countries-link{
     width: 69px;
 }
 .list-avia{
-    left: 473px;
+    left: 320px;
     width: 50px;
 }
 .list-catalog{
-    left: 580px;
+    left: 427px;
     width: 103px;
 }
 .list-catalog-link{
@@ -703,14 +801,14 @@ img{
     width: 119px;
 }
 .list-agents{
-    left: 739px;
+    left: 586px;
     width: 77px;
 }
 .list-agents-link{
     width: 77px;
 }
 .list-WE{
-    left: 876px;
+    left: 723px;
     width: 57px;
 }
 .list-WE-link{
@@ -730,7 +828,7 @@ img{
     top: -176.5px;
 }
 .list-blog{
-    left: 993px;
+    left: 840px;
     width: 34px;
 }
 .list-blog-link{
@@ -745,7 +843,7 @@ img{
     width: 50px;
 }
 .list-FAQ{
-    left: 1087px;
+    left: 934px;
     width: 29px;
 }
 .list-FAQ-link{
@@ -760,7 +858,7 @@ img{
     width: 47px;
 }
 .list-contacts{
-    left: 1175px;
+    left: 1022px;
     width: 71px;
 }
 .list-contacts-link{
@@ -774,12 +872,108 @@ img{
 .contacts-red{
     width: 87px;
 }
+@media screen and (max-width:1153px){
+    .list-block{
+        left: 30px;
+    }
+    .list-hotels{
+        left: calc(79px - (1093px - 100vw + 60px)*0.0723);
+        transition: 0ms; 
+    }
+    .list-countries{
+        left: calc(195px - (1093px - 100vw + 60px)*0.178);
+        transition: 0ms;
+    }
+    .list-avia{
+        left: calc(320px - (1093px - 100vw + 60px)*0.293);
+        transition: 0ms;
+    }
+    .list-catalog{
+        left: calc(427px - (1093px - 100vw + 60px)*0.39);
+        transition: 0ms;
+    }
+    .list-agents{
+        left: calc(586px - (1093px - 100vw + 60px)*0.536);
+        transition: 0ms;
+    }
+    .list-WE{
+        left: calc(723px - (1093px - 100vw + 60px)*0.6615);
+        transition: 0ms;
+    }
+    .list-blog{
+        left: calc(840px - (1093px - 100vw + 60px)*0.7685);
+        transition: 0ms;
+    }
+    .list-FAQ{
+        left: calc(934px - (1093px - 100vw + 60px)*0.8545);
+        transition: 0ms;
+    }
+    .list-contacts{
+        left: calc(1022px - (1093px - 100vw + 60px)*0.935);
+        transition: 0ms;
+    }
+}
+@media screen and (max-width:803px){
+    .list-bottom-line{
+        top: 315px;
+    }
+    .list{
+        height: 138px;
+    }
+    .list-block{
+        width: 537px;
+        height: 138px;
+        left: 10px;
+    }
+    .list-hotels,
+    .list-countries,
+    .list-avia,
+    .list-agents,
+    .list-WE{
+        top: 96px;
+    }
+    .list-hotels{
+        left: 0px;
+    }
+    .list-countries{
+        left: 116px;
+    }
+    .list-avia{
+        left: 241px;
+    }
+    .list-agents{
+        left: 347px;
+    }
+    .list-WE{
+        left: 480px;
+    }
+    .list-catalog{
+        left: 60px;
+    }
+    .list-blog{
+        left: 223px;
+    }
+    .list-FAQ{
+        left: 317px;
+    }
+    .list-contacts{
+        left: 406px;
+    }
+}
+@media screen and (max-width:803px) and (min-width:557px){
+    .list-block{
+        left: calc(133px - (803px - 100vw)/2);
+    }
+}
 .FAQ-questions{
-    position: absolute;
-    width: 1400px;
-    height: 594px;
-    left: 0px;
-    top: 170px;
+    position: relative;
+    padding-top: 105px;
+    width: 100vw;
+}
+@media screen and (min-width:1400px){
+    .FAQ-questions{
+        width: 100vw;
+    }
 }
 .faq-q-link-1{
     position: absolute;
@@ -856,9 +1050,9 @@ img{
     background-size: 332.7px 319.31px;
 }
 .faq-q-answers{
-    position: absolute;
+    position: relative;
     width: 800px;
-    height: 399px;
+    min-height: 399px;
     left: -763px;
     top: -30px;
 }
@@ -892,10 +1086,10 @@ img{
 }
 .faq-q-txt{
     position: absolute;
-    width: 604px;
     height: 25px;
     left: 75px;
     top: 30px;
+    right: 68.64px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -904,11 +1098,11 @@ img{
     color: #323232;
 }
 .faq-q-arrows{
-    position: absolute;
+    position: relative;
     width: 7.4px;
-    height: 368.5px;
-    left: 1248px;
-    top: 105px;
+    min-height: 368.5px;
+    right: 145.64px;
+    margin-bottom: 90px;
 }
 .faq-q-arrow-1,
 .faq-q-arrow-2,
@@ -926,10 +1120,10 @@ img{
 }
 .faq-q-txt-2{
     position: absolute;
-    width: 699px;
-    height: 70px;
+    height: 75px;
     left: 30px;
     top: 70px;
+    right: 71px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -984,13 +1178,335 @@ img{
     height: 170px;
     transition: 300ms;
 }
+@media screen and (max-width:1400px) and (min-width:1177px){
+    .FAQ-questions{
+        width: 100vw;
+    }
+    .faq-q-answers{
+        left: calc(0px - 763px + (1400px - 100vw));
+    }
+    .faq-q-answers,
+    .faq-q-block-1,
+    .faq-q-block-2,
+    .faq-q-block-3,
+    .faq-q-block-4{
+        width: calc(800px - (1400px - 100vw));
+        transition: 0ms;
+    }
+    .faq-q-arrows{
+        left: calc(1248px - (1400px - 100vw));
+    }
+}
+@media screen and (max-width:1337px) and (min-width:1177px){
+    .faq-q-arrow-1:hover ~ .faq-q-answers .faq-q-block-1,
+    .faq-q-arrow-2:hover ~ .faq-q-answers .faq-q-block-2,
+    .faq-q-arrow-3:hover ~ .faq-q-answers .faq-q-block-3,
+    .faq-q-arrow-4:hover ~ .faq-q-answers .faq-q-block-4{
+        height: 195px;
+        transition: 300ms;
+    }
+    .faq-q-txt-2{
+        height: 100px;
+    }
+    .faq-q-arrow-1:hover,
+    .faq-q-arrow-2:hover,
+    .faq-q-arrow-3:hover,
+    .faq-q-arrow-4:hover{
+        margin-bottom: 170.5px;
+    }
+}
+@media screen and (max-width:1245px) and (min-width:1177px){
+    .faq-q-block-1,
+    .faq-q-block-2{
+        height: 110px;
+    }
+    .faq-q-arrow-1:hover ~ .faq-q-answers .faq-q-block-1,
+    .faq-q-arrow-2:hover ~ .faq-q-answers .faq-q-block-2{
+        height: 220px;
+        transition: 300ms;
+    }
+    .faq-q-block-1 .faq-q-txt-2,
+    .faq-q-block-2 .faq-q-txt-2{
+        top: 95px;
+        height: 100px;
+    }
+    .faq-q-arrow-1,
+    .faq-q-arrow-2{
+        margin-bottom: 85.5px;
+    }
+    .faq-q-arrow-1:hover,
+    .faq-q-arrow-2:hover{
+        margin-bottom: 195.5px;
+    }
+}
+@media screen and (max-width:1177px){
+    .FAQ-questions{
+        padding-top: 400px;
+    }
+    .faq-q-plane{
+        top: 0px;
+        right: 254.84px;
+        left: auto;
+    }
+    .faq-q-mark{
+        top: 62.01px;
+        right: 115px;
+        left: auto;
+    }
+    .FAQ-questions-txt{
+        top: 118px;
+    }
+    .faq-q-arrows{
+        left: calc(1024px + (100vw - 1177px));
+    }
+    .faq-q-answers{
+        left: calc(0px - 910px - (100vw - 1177px));
+    }
+    .faq-q-answers,
+    .faq-q-block-1,
+    .faq-q-block-2,
+    .faq-q-block-3,
+    .faq-q-block-4{
+        width: calc(947px + (100vw - 1177px));
+        transition: 0ms;
+    }
+}
+@media screen and (max-width:966px){
+    .faq-q-arrow-1:hover ~ .faq-q-answers .faq-q-block-1,
+    .faq-q-arrow-2:hover ~ .faq-q-answers .faq-q-block-2,
+    .faq-q-arrow-3:hover ~ .faq-q-answers .faq-q-block-3,
+    .faq-q-arrow-4:hover ~ .faq-q-answers .faq-q-block-4{
+        height: 195px;
+        transition: 300ms;
+    }
+    .faq-q-txt-2{
+        height: 100px;
+    }
+    .faq-q-arrow-1:hover,
+    .faq-q-arrow-2:hover,
+    .faq-q-arrow-3:hover,
+    .faq-q-arrow-4:hover{
+        margin-bottom: 170.5px;
+    }
+    .faq-q-plane{
+        display: none;
+    }
+}
+@media screen and (max-width:874px){
+    .faq-q-block-1,
+    .faq-q-block-2{
+        height: 110px;
+    }
+    .faq-q-arrow-1:hover ~ .faq-q-answers .faq-q-block-1,
+    .faq-q-arrow-2:hover ~ .faq-q-answers .faq-q-block-2{
+        height: 220px;
+        transition: 300ms;
+    }
+    .faq-q-block-1 .faq-q-txt-2,
+    .faq-q-block-2 .faq-q-txt-2{
+        top: 95px;
+        height: 100px;
+    }
+    .faq-q-arrow-1,
+    .faq-q-arrow-2{
+        margin-bottom: 85.5px;
+    }
+    .faq-q-arrow-1:hover,
+    .faq-q-arrow-2:hover{
+        margin-bottom: 195.5px;
+    }
+}
+@media screen and (max-width:806px){
+    .faq-q-arrow-1:hover ~ .faq-q-answers .faq-q-block-1,
+    .faq-q-arrow-2:hover ~ .faq-q-answers .faq-q-block-2,
+    .faq-q-arrow-3:hover ~ .faq-q-answers .faq-q-block-3,
+    .faq-q-arrow-4:hover ~ .faq-q-answers .faq-q-block-4{
+        height: 245px;
+        transition: 300ms;
+    }
+    .faq-q-txt-2{
+        height: 125px;
+    }
+    .faq-q-arrow-1:hover,
+    .faq-q-arrow-2:hover,
+    .faq-q-arrow-3:hover,
+    .faq-q-arrow-4:hover{
+        margin-bottom: 220.5px;
+    }
+}
+@media screen and (max-width:806px){
+    .faq-q-arrow-1:hover ~ .faq-q-answers .faq-q-block-1,
+    .faq-q-arrow-2:hover ~ .faq-q-answers .faq-q-block-2{
+        height: 245px;
+        transition: 300ms;
+    }
+    .faq-q-arrow-3:hover ~ .faq-q-answers .faq-q-block-3,
+    .faq-q-arrow-4:hover ~ .faq-q-answers .faq-q-block-4{
+        height: 220px;
+        transition: 300ms;
+    }
+    .faq-q-txt-2{
+        height: 125px;
+    }
+    .faq-q-arrow-1:hover,
+    .faq-q-arrow-2:hover{
+        margin-bottom: 220.5px;
+    }
+    .faq-q-arrow-3:hover,
+    .faq-q-arrow-4:hover{
+        margin-bottom: 195.5px;
+    }
+}
+@media screen and (max-width:769px){
+    .faq-q-block-4{
+        height: 110px;
+    }
+    .faq-q-arrow-4:hover ~ .faq-q-answers .faq-q-block-4{
+        height: 245px;
+        transition: 300ms;
+    }
+    .faq-q-block-4 .faq-q-txt-2{
+        top: 95px;
+        height: 125px;
+    }
+    .faq-q-arrow-4{
+        margin-bottom: 85.5px;
+    }
+    .faq-q-arrow-4:hover{
+        margin-bottom: 195.5px;
+    }
+}
+@media screen and (max-width:723px){
+    .FAQ-questions{
+        padding-top: 496px;
+    }
+    .FAQ-questions-txt{
+        top: 93px;
+        text-align: center;
+        left: calc(249.5px + (100vw - 723px)/2);
+    }
+    .faq-q-mark{
+        top: 207px;
+        left: calc(250px + (100vw - 723px)/2);
+    }
+    .faq-q-answers{
+        left: -456px;
+    }
+    .faq-q-answers,
+    .faq-q-block-1,
+    .faq-q-block-2,
+    .faq-q-block-3,
+    .faq-q-block-4{
+        width: 493px;
+        transition: 0ms;
+    }
+    .faq-q-arrows{
+        left: calc(570px + (100vw - 723px)/2);
+    }
+}
+@media screen and (min-width:1400px){
+    .faq-q-answers{
+        left: calc(0px - 763px - (100vw - 1400px));
+    }
+    .faq-q-answers,
+    .faq-q-block-1,
+    .faq-q-block-2,
+    .faq-q-block-3,
+    .faq-q-block-4{
+        width: calc(800px + (100vw - 1400px));
+        transition: 0ms;
+    }
+    .faq-q-arrows{
+        left: calc(1248px + (100vw - 1400px));
+    }
+}
+@media screen and (min-width:1631px) and (max-width:2064px){
+    .faq-q-answers{
+        left: calc(0px - 640px - (100vw - 1631px));
+    }
+    .faq-q-answers,
+    .faq-q-block-1,
+    .faq-q-block-2,
+    .faq-q-block-3,
+    .faq-q-block-4{
+        width: calc(677px + (100vw - 1631px));
+        transition: 0ms;
+    }
+    .faq-q-arrows{
+        left: calc(1248px + (100vw - 1400px));
+    }
+    .faq-q-plane{
+        top: 75px;
+        left: 369px;
+    }
+    .faq-q-mark{
+        top: 137.01px;
+        left: 531.54px;
+    }
+    .FAQ-questions-txt{
+        top: 190px;
+    }
+}
+@media screen and (min-width:2064px){
+    .faq-q-answers{
+        left: -1073px;
+    }
+    .faq-q-answers,
+    .faq-q-block-1,
+    .faq-q-block-2,
+    .faq-q-block-3,
+    .faq-q-block-4{
+        width: 1110px;
+        transition: 0ms;
+    }
+    .faq-q-arrows{
+        left: 1911px;
+    }
+    .faq-q-plane{
+        top: 75px;
+        left: 369px;
+    }
+    .faq-q-mark{
+        top: 137.01px;
+        left: 531.54px;
+    }
+    .FAQ-questions-txt{
+        top: 190px;
+    }
+}
 .FAQ-bottom{
-    position: absolute;
+    position: relative;
     width: 1400px;
     height: 260px;
     left: 0px;
-    top: 764px;
     background: #F8F8F8;
+}
+@media screen and (min-width:1400px){
+    .FAQ-bottom{
+        margin: 0 auto;
+    }
+    .faq-bottom-left{
+        position: absolute;
+        height: 260px;
+        width: calc((100vw - 1400px)/2);
+        min-width: 50px;
+        right: 1400px;
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
+    }
+    .faq-bottom-right{
+        position: absolute;
+        height: 260px;
+        width: calc((100vw - 1400px)/2);
+        min-width: 50px;
+        left: 1400px;
+        background: linear-gradient(90deg, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 100%);
+    }
+}
+@media screen and (min-width:2064px){
+    .faq-bottom-left,
+    .faq-bottom-right{        
+        width: 332px;
+    }
 }
 .faq-logo{
     position: absolute;
@@ -1104,9 +1620,9 @@ img{
 }
 .faq-bottom-line{
     position: absolute;
-    width: 1036px;
+    width: 1170px;
     height: 1px;
-    left: 201px;
+    left: 115px;
     top: 191px;
     background: rgba(29, 29, 29, 0.2);
     border-radius: 2px;
@@ -1115,7 +1631,7 @@ img{
     position: absolute;
     width: 377px;
     height: 18px;
-    left: 201px;
+    left: 115px;
     top: 214px;
     font-family: 'Suisse Int`l Trial', sans-serif;
     font-style: normal;
@@ -1124,12 +1640,17 @@ img{
     line-height: 18px;
     color: rgba(62, 62, 62, 0.5);
 }
+.faq-fiy{
+    position: absolute;
+    width: 79.2px;
+    height: 20px;
+    right: 115.63px;
+    top: 214px;
+}
 .faq-facebook{
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 1152px;
-    top: 214px;
     background: no-repeat url(../img/png-icons/facebook\ 2.png);
     background-size: 20px 20px;
 }
@@ -1137,8 +1658,7 @@ img{
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 1182px;
-    top: 214px;
+    left: 26.4px;
     background: no-repeat url(../img/png-icons/instagram\ \(1\)\ 2.png);
     background-size: 20px 20px;
 }
@@ -1146,8 +1666,129 @@ img{
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 1217px;
-    top: 214px;
+    left: 52.8px;
     background: no-repeat url(../img/png-icons/youtube\ 2.png);
     background-size: 20px 20px;
+}
+@media screen and (max-width:1400px){
+    .FAQ-bottom{
+        width: 100vw;
+    }
+    .faq-bottom-line{
+        width: calc(100vw - 230px);
+    }
+    .faq-link-1,
+    .faq-link-2,
+    .faq-link-3,
+    .faq-link-4{
+        left: calc(561px - (1400px - 100vw));
+    }
+    .faq-link-5,
+    .faq-link-6,
+    .faq-link-7{
+        left: calc(744px - (1400px - 100vw));
+    }
+    .faq-txt-1,
+    .faq-txt-2{
+        left: calc(901px - (1400px - 100vw));
+    }
+    .faq-nuber-1,
+    .faq-nuber-2,
+    .faq-contacts{
+        left: calc(1131px - (1400px - 100vw));
+    }
+}
+@media screen and (max-width:1140px){
+    .faq-link-1,
+    .faq-link-2,
+    .faq-link-3,
+    .faq-link-4{
+        left: 301px;
+    }
+}
+@media screen and (max-width:1090px){
+    .faq-link-5,
+    .faq-link-6,
+    .faq-link-7{
+        left: 434px;
+    }
+}
+@media screen and (max-width:1036px){
+    .faq-txt-1,
+    .faq-txt-2{
+        left: 537px;
+    }
+}
+@media screen and (max-width:986px){
+    .faq-bottom-line{
+        width: 756px;
+    }
+    .faq-bottom-line,
+    .faq-bottom-txt,
+    .faq-logo{
+        left: calc(115px - (986px - 100vw)/2);
+    }
+    .faq-link-1,
+    .faq-link-2,
+    .faq-link-3,
+    .faq-link-4{
+        left: calc(301px - (986px - 100vw)/2);
+    }
+    .faq-link-5,
+    .faq-link-6,
+    .faq-link-7{
+        left: calc(434px - (986px - 100vw)/2);
+    }
+    .faq-txt-1,
+    .faq-txt-2{
+        left: calc(537px - (986px - 100vw)/2);
+    }
+    .cb-nuber-1,
+    .cb-nuber-2,
+    .cb-contacts{
+        left: calc(717px - (986px - 100vw)/2);
+    }
+    .faq-fiy{
+        right: calc(115px - (986px - 100vw)/2);
+    }
+}
+@media screen and (max-width:816px){
+    .faq-bottom-line{
+        width: calc(756px - (816px - 100vw));
+    }
+    .faq-bottom-line,
+    .faq-bottom-txt,
+    .faq-logo{
+        left: 30px;
+    }
+    .faq-link-1,
+    .faq-link-2,
+    .faq-link-3,
+    .faq-link-4{
+        left: 216px;
+    }
+    .faq-link-5,
+    .faq-link-6,
+    .faq-link-7{
+        left: 349px;
+    }
+    .faq-txt-1,
+    .faq-txt-2{
+        left: 452px;
+    }
+    .faq-nuber-1,
+    .faq-nuber-2,
+    .faq-contacts{
+        left: 452px;
+        top: 108px;
+    }
+    .faq-nuber-1{
+        top: 132px;
+    }
+    .faq-nuber-2{
+        display: none;
+    }
+    .faq-fiy{
+        right: 30px;
+    }
 }
