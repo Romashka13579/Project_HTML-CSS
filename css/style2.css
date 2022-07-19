@@ -1,10 +1,11 @@
+html{
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
-}
-body::-webkit-scrollbar{
-    display: none;
 }
 .main{
     position: relative;
@@ -1529,6 +1530,13 @@ img{
 .ot-block-5 .ot-block-txt{
     width: 335;
 }
+.contacts-bottom{
+    position: relative;
+    width: 1400px;
+    height: 260px;
+    left: 0px;
+    background: #F8F8F8;
+}
 @media screen and (min-width:1400px){
     .contacts-bottom{
         margin: 0 auto;
@@ -1555,13 +1563,6 @@ img{
     .contacts-bottom-right{        
         width: 332px;
     }
-}
-.contacts-bottom{
-    position: relative;
-    width: 1400px;
-    height: 260px;
-    left: 0px;
-    background: #F8F8F8;
 }
 .cb-logo{
     position: absolute;
