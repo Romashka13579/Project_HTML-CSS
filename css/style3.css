@@ -971,6 +971,11 @@ img{
     padding-top: 105px;
     width: 100vw;
 }
+@media screen and (min-width:1400px){
+    .FAQ-questions{
+        width: 1400px;
+    }
+}
 .faq-q-link-1{
     position: absolute;
     width: 50px;
@@ -1739,9 +1744,9 @@ img{
     .faq-txt-2{
         left: calc(537px - (986px - 100vw)/2);
     }
-    .cb-nuber-1,
-    .cb-nuber-2,
-    .cb-contacts{
+    .faq-nuber-1,
+    .faq-nuber-2,
+    .faq-contacts{
         left: calc(717px - (986px - 100vw)/2);
     }
     .faq-fiy{
